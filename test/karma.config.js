@@ -4,6 +4,7 @@ var webpack = require('webpack')
 var path = require('path')
 
 var webpackConfig = {
+  mode: 'development',
   resolve: {
     alias: {
       src: path.resolve(__dirname, '../', 'src')
@@ -54,7 +55,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome','Firefox'],
+    browsers: ['Chrome','Firefox','IE'],
 
 
     // Continuous Integration mode
